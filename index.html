@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ГБУ СО РЦТ</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header_logo">
+      <a href="index.html"><img src="img/gerb.png" class="img_logo"></a>
+      <h5 class="text_logo">Государственное бюджетное учреждение<br>Самарской области<br> «Региональный центр
+        телекоммуникаций»</h5>
+      <div id="text_logo_mobile">Государственное бюджетное<br> учреждение<br> Самарской области<br> «Региональный центр<br>
+      телекоммуникаций»</div>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="work.html">Вакансии</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="about us.html">О нас</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+  <div class="page-index">
+    <div class="slideshowPart">
+      <div class="slideshow_and_buttons">
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="img/photo1.png" class="photo1">
+          </div>
+          <div class="mySlides fade">
+            <img src="img/photo2.webp" class="photo2">
+          </div>
+          <div class="mySlides fade">
+            <img src="img/photo3.webp" class="photo3">
+          </div>
+        </div>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+      </div>
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <div class="infoPart">
+      <div class="info">
+        <h5 class="info_title">Информация</h5>
+        <div class="all_info">
+        <div class="info1">
+        <a href='https://dit.samregion.ru/'><img src="img/gerb2.png" class="gerb"></a>
+        <a href='https://dit.samregion.ru/' class="department">Департамент информационных<br> технологий, связи, телекоммуникаций<br> Самарской области</a>
+        <a href='https://dit.samregion.ru/' id="department_mobile">Департамент<br> информационных<br> технологий, связи,<br> телекоммуникаций<br> Самарской области</a>
+        </div>
+        <h5 class="line">_______</h5>
+        <div class="info2">
+        <a href='https://www.samregion.ru/open_government/institutions-gubernatorskij-proekt-sodejstvie/dokumenty-k-proektu-sodejstvie/'><img src="img/soaction.png" class="soaction"></a>
+        <a href='https://www.samregion.ru/open_government/institutions-gubernatorskij-proekt-sodejstvie/dokumenty-k-proektu-sodejstvie/' class="project"> Губернаторский проект<br> «СОдействие: Решаем вместе»</a>
+        <a href='https://www.samregion.ru/open_government/institutions-gubernatorskij-proekt-sodejstvie/dokumenty-k-proektu-sodejstvie/' id="project_mobile">Губернаторский<br> проект<br> «СОдействие:<br> Решаем вместе»</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <h5 class="footer_text">ГБУ СО РЦТ ©2023</h5>
+    <div class="icons">
+      <a href="mailto:samrct@samrct.ru"><img src="img/email.svg" class="email_logo"></a>
+      <a href="tel:+78462057389"><img src="img/phone.svg" class="phone_logo"></a>
+      <a href='https://vk.com/samrct?ysclid=lha59pm5ee431839721'><img src="img/vk.png" class="vk_logo"></a>
+    </div>
+  </footer>
+  
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+
+</html>
