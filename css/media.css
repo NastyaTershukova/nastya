@@ -210,7 +210,11 @@
         margin-left: -120px;
     }
     .contact_info {
+        font-style: normal;
+        font-weight: 700;
         font-size: 22px;
+        text-align: center;
+        color: #ffffff;
     }
     .contact_text1, .contact_text2 {
     font-size: 12px;
@@ -222,6 +226,10 @@
     #rabota_mobile {
         display: initial;
         font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 16px;
     }
     /*контакты*/
     .div_contacts {
