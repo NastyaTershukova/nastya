@@ -187,7 +187,7 @@
         margin-top: 46px;
     }
     .descriptionPart {
-        margin-left: -200px;
+        margin-left: -190px;
         width: 100%;
      }
     .rabota {
@@ -198,11 +198,11 @@
     }
     .days {
         font-size: 11px;
-        margin-left: -40px;
+        margin-left: -35px;
     }
     .description1, .description2 {
         font-size: 11px;
-        margin-left: 50px;
+        margin-left: 45px;
     }
     .block {
         width: 114px;
@@ -216,6 +216,7 @@
         text-align: center;
         color: #ffffff;
     }
+
     .contact_text1, .contact_text2 {
     font-size: 12px;
     }
@@ -230,7 +231,7 @@
         font-weight: 600;
         color: #000000;
         margin-bottom: 16px;
-    }
+        }
     /*контакты*/
     .div_contacts {
         display: flex;
