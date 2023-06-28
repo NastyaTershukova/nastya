@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: "Montserrat";
+    font-size: 100%;
+    background: #ffffff;
+    height: 100%;
+}
+
+header {
+    background: #D0ECFC;
+    width: 100%;
+    display: flex;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.img_logo {
+    width: 65px;
+    height: 70px;
+    margin: 16px 16px 16px 96px;
+}
+
+.text_logo {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+}
+
+#text_logo_mobile {
+    display: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    color: #000000;
+}
+
+.header_burger {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-size: 12px;
+    color: #000000;
+    margin-left: auto;
+    margin-right: 96px;
+}
+
+.nav-links {
+    list-style: none;
+    font-weight: 400;
+    color: #000000;
+    display: flex;
+    gap: 64px;
+}
+
+ul li a {
+    transition: 0.5s ease;
+}
+
+ul:hover li a {
+    color: #0091ff;
+}
+
+ul:hover li a:not(:hover) {
+    color: #000000;
+    opacity: 0.3;
+    filter: blur(0.5px);
+}
+
+nav li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    max-width: 1600px;
+    padding-left: 96px;
+    margin: 0 auto 0 auto;
+    gap: 40px;
+}
+
+.page-index {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.slideshowPart {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.slideshow_and_buttons {
+    display: flex;
+    align-items: center;
+}
+
+.slideshow-container {
+    margin: 0 -41px 0 -41px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 7 / 4;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.next {
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.infoPart {
+    height: 600px;
+    width: 40%;
+}
+
+.photo1,
+.photo2,
+.photo3 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 7 / 4;
+    object-fit: cover;
+}
+
+.info {
+    flex-direction: column;
+    gap: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.info1 {
+    flex-direction: column;
+    gap: 34px;
+    display: flex;
+    align-items: center;
+
+}
+
+.info2 {
+    flex-direction: column;
+    gap: 34px;
+    display: flex;
+    align-items: center;
+
+}
+
+.all_info {
+    flex-direction: column;
+    gap: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.info_title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 48px;
+}
+
+.gerb {
+    width: 72px;
+    height: 78px;
+}
+
+.department {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    transition: 0.5s ease;
+}
+#department_mobile {
+    display: none;
+}
+.department:hover {
+    color: #0091ff;
+}
+
+.line {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+.soaction {
+    width: 143px;
+    height: 74px;
+}
+
+.project {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+#project_mobile {
+    display: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.project:hover {
+    color: #0091ff;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    background: #71BBE4;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 96px;
+    gap: 32px;
+}
+
+.icons>a {
+    display: block;
+}
+
+.vk_logo {
+    width: 35px;
+    height: 35px;
+    transition: 0.5s ease;
+}
+
+.vk_logo:hover {
+    scale: 1.2;
+}
+
+.email_logo {
+    width: 33px;
+    height: 33px;
+    transition: 0.5s ease;
+}
+
+.email_logo:hover {
+    scale: 1.2;
+}
+
+.phone_logo {
+    width: 33px;
+    height: 33px;
+    transition: 0.5s ease;
+}
+
+.phone_logo:hover {
+    scale: 1.2;
+}
+
+.footer_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    margin: 16px 16px 16px 96px;
+}
+
+/*вакансии*/
+.vacansii_title {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: #000000;
+}
+
+.page-work {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.all_work {
+    display: flex;
+    margin: 64px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.groups {
+    display: flex;
+    flex-direction: row;
+    gap: 104px;
+}
+
+.group1 {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.group2 {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.photo_work {
+    width: 100%;
+    height: 500px;
+    background: #7bb3fc;
+    position: absolute;
+}
+
+.rectangle1,
+.rectangle2,
+.rectangle3,
+.rectangle4 {
+    width: 292px;
+    height: 156px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px 1px rgba(86, 86, 86, 0.25);
+    border-radius: 5px;
+    position: relative;
+}
+
+.work1,
+.work2,
+.work3,
+.work4 {
+    padding: 32px 0 44px 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    position: relative;
+    z-index: 2;
+
+}
+
+.more1,
+.more2,
+.more3,
+.more4 {
+    margin-left: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #007CC3;
+    box-shadow: inset 0 0 0 0 #007CC3;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.more1:hover,
+.more2:hover,
+.more3:hover,
+.more4:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #007CC3;
+}
+
+/*контакты*/
+
+.contacts {
+    margin-top: 46px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: #000000;
+}
+
+.page-row {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.map {
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+.page {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+.contactsPart {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact_title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 8px;
+}
+
+.contact_link1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+.contact_link2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    box-shadow: inset 0 0 0 0 #007CC3;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.contact_link2:hover {
+    color: #fff;
+    box-shadow: inset 132px 0 0 0 #007CC3;
+}
+
+.img_point {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+
+.img_email {
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.img_phone {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    left: 1000px;
+    top: 525px;
+}
+
+/*о нас*/
+.about_us {
+    margin-top: 46px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: #000000;
+}
+
+.page-us {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.spoiler_wrap {
+    position: relative;
+    font-size: 22px;
+    background: #fff;
+    border-radius: 5px;
+    height: fit-content;
+    width: 1160px;
+    margin-top: 40px;
+    background: linear-gradient(96.45deg, #B9CBF9 28.8%, #81D1FF 89.04%);
+    box-shadow: 0 7px 0 #97b2f7;
+}
+
+.spoiler_wrap:hover {
+    background: #bbe6ff;
+    box-shadow: 0 7px 0 #7fd0ff;
+}
+
+.spoiler_title {
+    cursor: pointer;
+}
+
+.spoiler_title,
+.spoiler_content {
+    padding: 30px 26px;
+}
+
+.spoiler_content {
+    padding-top: 0;
+    padding-bottom: 10px;
+    transition: 0.15s ease-out;
+    height: auto;
+    max-height: 0px;
+    overflow: hidden;
+    margin-top: -10px;
+    opacity: 0;
+    font-size: 14px;
+    color: #000000;
+    text-indent: 20px;
+    bottom: 30px;
+}
+
+.spoiler_content p {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #000000;
+    line-height: 1.4;
+}
+
+.spoiler_content.open {
+    margin-top: 0;
+    max-height: 100%;
+    opacity: 1;
+}
+
+.spoiler_title .spoiler_arrow {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 20px;
+    transition: all .1s;
+    vertical-align: middle;
+}
+
+.spoiler_title .spoiler_arrow svg {
+    fill: rgba(19, 32, 44, 0.63);
+    width: 13px;
+}
+
+.spoiler_title .spoiler_arrow.open {
+    transform: rotate(180deg);
+}
+
+/*вакансия главный инженер*/
+.work_wrap {
+    display: flex;
+    align-items: center;
+    min-height: 82vh;
+}
+
+.page-work1 {
+    max-width: 1400px;
+    padding-left: 96px;
+    margin: 0 auto 0 auto;
+}
+.descriptionPart {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.rabota {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+#rabota_mobile {
+    display: none;;
+}
+
+.block {
+    width: 125px;
+    height: 35px;
+    background: #81D1FF;
+    border-radius: 100px;
+    margin-bottom: 16px;
+}
+
+.salary {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    margin: 9px 12px;
+}
+
+.days {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.description1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.description2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+.contactPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 88px;
+    height: 600px;
+    width: 40%;
+}
+
+.contact_block {
+    width: 300px;
+    height: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(86, 86, 86, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figure1 {
+    width: 274px;
+    height: 108px;
+    background: linear-gradient(96.45deg, #B9CBF9 28.8%, #81D1FF 89.04%);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.contact_info {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contact_text1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.contact_text2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.figure2 {
+    width: 168px;
+    height: 34px;
+    background: linear-gradient(96.45deg, #B9CBF9 28.8%, #81D1FF 89.04%);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.contact_mail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    transition: 0.3s ease;
+    margin: 8px 18px;
+}
+
+.contact_mail:hover {
+    color: white;
+}

@@ -1,0 +1,341 @@
+@media screen and (max-width: 1280px) {
+    section {
+        flex-direction: column;
+        margin-top: 32px;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 1280px) {
+    section {
+        flex-direction: column;
+        margin-top: 32px;
+        padding-left: 96px;
+    }
+    .spoiler_wrap {
+        width: 400px;
+    }
+    .flex-row.page-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactsPart {
+        text-align: center;
+        align-items: center;
+        display: flex;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .img_logo {
+        width: 60px;
+        height: 64px;
+        margin: 16px 16px 16px 96px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /*главная*/
+    nav {
+        display: none;
+    }
+    section {
+        flex-direction: column;
+        margin-top: 32px;
+        padding-left: 0;
+    }
+    .text_logo {
+        display: none;
+    }
+    .img_logo {
+        width: 60px;
+        height: 64px;
+        margin: 16px 16px 16px 32px;
+    }
+    #text_logo_mobile {
+        display: initial;
+    }
+    body.lock {
+        overflow: hidden;
+    }
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-top: 40px;
+        margin-left: 32px;
+        z-index: 5;
+    }
+    .header_burger span {
+        position: absolute;
+        background-color: #000000;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger:before,
+    .header_burger:after {
+        content: '';
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger:before {
+        top: 0;
+    }
+    .header_burger:after {
+        bottom: 0;
+    }
+    .header_burger.active span{
+        transform: scale(0);
+    }
+    .header_burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header_burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .menu {
+        display: initial;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: -100%;
+        background-color: #D0ECFC;;
+        transition: all 0.3s ease 0s;
+        z-index: 4;
+    }
+    .menu.active  {
+        top: 0px;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        margin-left: 32px;
+        margin-top: 96px;
+    }
+    .page-index {
+        min-height: 75vh;
+        flex-direction: column;
+        margin-top: 16px;
+    }
+    .slideshowPart {
+        width: 80%;
+    }
+    .slideshow-container {
+        margin: 0 -34px 0 -34px; 
+    }
+    .prev, .next {
+        padding: 12px;
+    }
+    .dot {
+        height: 11px;
+        width: 11px;
+    }
+    .line {
+        display: none;
+    }
+    .all_info {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .infoPart {
+        height: 350px;
+    }
+    .info_title {
+        font-size: 18px;
+    }
+    .project {
+        display: none;
+    }
+    #project_mobile {
+        display: initial;
+    }
+    .department {
+        display: none;
+    }
+    #department_mobile {
+        display: initial;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #000000;
+        text-align: center;
+        transition: 0.5s ease;
+    }
+    .soaction {
+        width: 130px;
+        height: 65px;
+    }
+    .gerb {
+        width: 56px;
+        height: 60px;
+    }
+    .info1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .info2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+        margin-bottom: 16px;
+    }
+    .footer_text {
+        font-size: 11px;
+        margin-left: 40px;
+    }
+    .icons {
+        gap: 16px;
+        margin-right: 40px;
+    }
+    .vk_logo {
+        width: 30px;
+        height: 30px;
+    }
+    .email_logo {
+        width: 28px;
+        height: 28px;
+    }
+    .phone_logo {
+        width: 28px;
+        height: 28px;
+    }
+    /*о нас*/
+    .page-us {
+        min-height: 75vh;
+    }
+    .spoiler_wrap {
+        width: 300px;
+        font-size: 18px;
+    }
+    .spoiler_content {
+        font-size: 12px;
+    }
+    .spoiler_content p {
+        font-size: 12px;
+    }
+    /*вакансии*/
+    .work1, .work2, .work3, .work4 {
+        font-size: 18px;
+    }
+    .more1, .more2, .more3, .more4 {
+        font-size: 16px;
+    }
+    .page-work {
+        min-height: 80vh;
+    }
+    .photo_work {
+        height: 900px;
+    }
+    .groups {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+    }
+    .work_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    /*главный инженер*/
+    .page-work1 {
+        margin-top: 46px;
+    }
+    .descriptionPart {
+        margin-left: -190px;
+        width: 100%;
+     }
+    .rabota {
+        display: none;
+    }
+    .salary {
+        font-size: 12px;
+    }
+    .days {
+        font-size: 11px;
+        margin-left: -35px;
+    }
+    .description1, .description2 {
+        font-size: 11px;
+        margin-left: 45px;
+    }
+    .block {
+        width: 114px;
+        height: 32px;
+        margin-left: -120px;
+    }
+    .contact_info {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .contact_text1, .contact_text2 {
+    font-size: 12px;
+    }
+    .contact_block {
+        margin-left: -90px;
+        margin-bottom: 32px;
+    }
+    
+    #rabota_mobile {
+        display: initial;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 16px;
+        }
+
+    /*контакты*/
+    .div_contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-row.page-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactsPart {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        margin-top: 46px;
+    }
+    .map {
+        height: 250px;
+    }
+    .contact_title {
+        font-size: 16px;
+    }
+    .contact_link1 {
+        font-size: 12px;
+    }
+    
+    .contact_link2 {
+        font-size: 12px;
+    }
+    .descriptionPart {
+       display: flex;
+       align-items: center;
+    }
+    .contacts, .vacansii_title, .about_us {
+        font-size: 22px;
+    }
+}
