@@ -92,6 +92,9 @@
     .header_burger:after {
         bottom: 0;
     }
+    .header_burger.active {
+        background: none;
+    }
     .header_burger.active span{
         transform: scale(0);
     }
@@ -102,9 +105,6 @@
     .header_burger.active:after {
         transform: rotate(-45deg);
         bottom: 9px;
-    }
-    .header_burger.active {
-        background: none;
     }
     .menu {
         display: initial;
@@ -255,12 +255,19 @@
         flex-direction: column;
     }
     /*главный инженер*/
-    .page-work1 {
-        margin-top: 46px;
+    /*.work_wrap {
+        display: flex;
+        flex-direction: column;
     }
+    .page-work1 {
+        padding-left: 32px;
+        margin: 48px auto 0 auto;
+    }*/
     .descriptionPart {
-        margin-left: -190px;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 48px auto 0 -48px;
+        width: 200px;
      }
     .rabota {
         display: none;
@@ -270,20 +277,20 @@
     }
     .days {
         font-size: 11px;
-        margin-left: -35px;
+        
     }
     .description1, .description2 {
         font-size: 11px;
-        margin-left: 45px;
     }
     .block {
         width: 114px;
         height: 32px;
-        margin-left: -120px;
+        margin-left: -84px;
+        
     }
+
     .contact_info {
         font-style: normal;
-        font-weight: 700;
         font-size: 22px;
         text-align: center;
         color: #ffffff;
@@ -293,8 +300,8 @@
     font-size: 12px;
     }
     .contact_block {
-        margin-left: -90px;
         margin-bottom: 32px;
+        margin-left: -90px;
     }
     
     #rabota_mobile {
