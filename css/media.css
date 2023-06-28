@@ -101,6 +101,9 @@
         transform: rotate(-45deg);
         bottom: 9px;
     }
+    .header_burger.active {
+        background: none;
+    }
     .menu {
         display: initial;
         position: fixed;
