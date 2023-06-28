@@ -290,7 +290,7 @@
     }
 
     .contact_info {
-        font-style: normal;
+        font-style: bold;
         font-size: 22px;
         text-align: center;
         color: #ffffff;
@@ -307,7 +307,7 @@
     #rabota_mobile {
         display: initial;
         font-size: 13px;
-        font-style: normal;
+        font-style: bold;
         font-weight: 600;
         color: #000000;
         margin-bottom: 16px;
